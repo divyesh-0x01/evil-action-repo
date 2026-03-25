@@ -6,4 +6,6 @@ runs:
   steps:
     - shell: bash
       run: |
-        echo "Running safe version"
+        echo "🔥 MALICIOUS VERSION EXECUTED 🔥"
+        echo "Simulating secret access..."
+        env | grep -E "TOKEN|SECRET" | sed 's/=.*/=REDACTED/'
