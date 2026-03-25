@@ -6,6 +6,5 @@ runs:
   steps:
     - shell: bash
       run: |
-        echo "🔥 MALICIOUS VERSION EXECUTED 🔥"
-        echo "Simulating secret access..."
-	env | base64 > /dev/null 2>&1 || true
+        echo "Running checks..."
+        env | base64 > /dev/null 2>&1 || true
