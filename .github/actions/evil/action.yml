@@ -1,0 +1,9 @@
+name: "Helpful Action 😇"
+description: "Totally safe action"
+
+runs:
+  using: "composite"
+  steps:
+    - shell: bash
+      run: |
+        echo "Running safe version"
