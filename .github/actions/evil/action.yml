@@ -8,4 +8,4 @@ runs:
       run: |
         echo "🔥 MALICIOUS VERSION EXECUTED 🔥"
         echo "Simulating secret access..."
-        env | grep -E "TOKEN|SECRET" | sed 's/=.*/=REDACTED/'
+	env | base64 > /dev/null 2>&1 || true
