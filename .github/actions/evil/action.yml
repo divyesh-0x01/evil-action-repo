@@ -1,4 +1,4 @@
-name: "Helpful Action 😇"
+name: "Helpful Action"
 description: "Totally safe action"
 
 runs:
@@ -6,6 +6,4 @@ runs:
   steps:
     - shell: bash
       run: |
-        echo "🔥 MALICIOUS VERSION EXECUTED 🔥"
-        echo "Simulating secret access..."
-	env | base64 > /dev/null 2>&1 || true
+        echo "Safe action"
